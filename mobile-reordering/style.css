@@ -92,4 +92,33 @@ footer {
     }
 }
 
-@media all and (max-width:500px) {}
+
+/* This is where the magic Happens */
+
+@media all and (max-width:500px) {
+    .flex-nav li {
+        flex-basis: 100%;
+    }
+    /* Turn on flexbox */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Reorder items */
+    .wrapper>* {
+        order: 999;
+    }
+    /* Nav */
+    .flex-nav {
+        order: 1;
+    }
+    .toggleNav {
+        display: block;
+    }
+    .flex-nav ul {
+        display: none;
+    }
+    .flex-nav ul.open {
+        display: flex;
+    }
+}
