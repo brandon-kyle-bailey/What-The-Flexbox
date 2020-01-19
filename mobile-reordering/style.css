@@ -121,4 +121,13 @@ footer {
     .flex-nav ul.open {
         display: flex;
     }
+    .top {
+        order: 2;
+    }
+    .details {
+        order: 3;
+    }
+    .signup {
+        order: 4;
+    }
 }
