@@ -46,6 +46,12 @@ a:hover {
 }
 
 .slider-nav li {
+    flex: 2;
+    text-align: center;
+    display: flex;
+}
+
+.slider-nav .arrow {
     flex: 1;
 }
 
